@@ -4,83 +4,132 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Equilíbrio na colher</title>
+    <link rel="stylesheet" href="css/site.css">
 </head>
 <body>
-    <header>
-        <img src="imagens/logo site.png" alt="Logo site">
-        <nav>
+ 
+    <!-- ===== HEADER ===== -->
+    <header class="header">
+        <div class="header__logo">
+            <a href="index.html">
+                <img src="imagens/logo site.png" alt="Logo Equilíbrio na Colher">
+            </a>
+        </div>
+        <nav class="header__nav">
             <ul>
-                <li><a href="#paginainicial">Página inicial(Home)</a></li>
+                <li><a href="#paginainicial">Página inicial</a></li>
                 <li><a href="receitas.html">Receitas</a></li>
-                <li>Dicas nutricionais</li>
-                <ul>
-                    <li><a href="lowcarb.html">Dieta Low Carb</a></li>
-                    <li><a href="treino.html">Treino e dieta</a></li>
-                    <li><a href="nutricao.html">Nutrição</a></li>
-                </ul>
+                <li class="nav__submenu-titulo">Dicas nutricionais
+                    <ul class="nav__submenu">
+                        <li><a href="lowcarb.html">Dieta Low Carb</a></li>
+                        <li><a href="treino.html">Treino e dieta</a></li>
+                        <li><a href="nutricao.html">Nutrição</a></li>                        
+                    </ul>
+                </li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
         </nav>
     </header>
-
+ 
+    <!-- ===== CONTEÚDO PRINCIPAL ===== -->
     <main>
-        <h1 id="paginainicial">Comer bem é mais fácil do que parece!</h1>
-        <p>Receitas saudáveis, práticas e gostosas para o seu dia a dia. Sem complicação, com muito sabor.</p>
-
-        <img src="imagens/logocafedamanhã.webp" alt="opçao cafe da manha">
-        <a href="receitas.html#cafedamanha">Café da manhã</a>
-
-        <img src="imagens/salad_no_bg_refined.png" alt="opçao almoço">
-        <a href="receitas.html#refeicoes">Almoço</a>
-
-        <img src="imagens/fruit_no_bg_refined.png" alt="opçao lanche">
-        <a href="receitas.html#lanches">Lanche</a>
-
-        <img src="imagens/no_bg.png" alt="opcao jantar">  
-        <a href="receitas.html#refeicoes">Jantar</a>
-
-        <img src="imagens/logosobremesa.png" alt="opcao sobremesa">
-        <a href="receitas.html#sobremesas">Sobremesa</a>
-
-        <h2>Receitas em destaque</h2>
-        <a href="panqueca.html">Paqueca de banana e aveia</a>
-        <img src="imagens/panqueca de banana e aveia.jpg" alt="panqueca de banana">
-
-        <a href="wrapdefrango.html">Wrap de frango</a>
-        <img src="imagens/wrap de frango.webp" alt="Wrap de frango">
-
-        <a href="sorvete.html">Sorvete zero açúcar</a>
-        <img src="imagens/sorvete.avif" alt="Sorvete zero açúcar">
-
-        <a href="saladagraodebico.html">Salada de grão de bico</a>
-        <img src="imagens/salada grao de bico.jpg" alt="Salada de grao de bico">
-
-        <h2>Dicas e artigos recentes</h2>
-        <p>Alimentação</p>
-        <a href="lowcarb.html">Dieta low carb</a>
-        <p>A dieta low carb realmete é a melhor opção para quem quer emagrecer?</p>
-
-        <p>Planejamento</p>
-        <a href="treino.html">Treino e dieta</a>
-        <p>É possível conciliar dieta e teino na sua rotina!</p>
-
-        <p>Bem-estar</p>
-        <a href="nutricao.html">Nutrição</a>
-        <p>Aprenda a combinar macronutrientes de forma simples e prática no dia a dia.</p>
+ 
+        <!-- Hero -->
+        <section class="hero" id="paginainicial">
+            <h1 class="hero__titulo">Comer bem é mais fácil do que parece!</h1>
+            <p class="hero__subtitulo">Receitas saudáveis, práticas e gostosas para o seu dia a dia. Sem complicação, com muito sabor.</p>
+        </section>
+ 
+        <!-- Categorias -->
+        <section class="categorias">
+            <div class="categorias__item">
+                <img src="imagens/logocafedamanhã.webp" alt="Café da manhã">
+                <a href="receitas.html#cafedamanha">Café da manhã</a>
+            </div>
+            <div class="categorias__item">
+                <img src="imagens/salad_no_bg_refined.png" alt="Almoço">
+                <a href="receitas.html#refeicoes">Almoço</a>
+            </div>
+            <div class="categorias__item">
+                <img src="imagens/fruit_no_bg_refined.png" alt="Lanche">
+                <a href="receitas.html#lanches">Lanche</a>
+            </div>
+            <div class="categorias__item">
+                <img src="imagens/no_bg.png" alt="Jantar">
+                <a href="receitas.html#refeicoes">Jantar</a>
+            </div>
+            <div class="categorias__item">
+                <img src="imagens/logosobremesa.png" alt="Sobremesa">
+                <a href="receitas.html#sobremesas">Sobremesa</a>
+            </div>
+        </section>
+ 
+        <!-- Receitas em destaque -->
+        <section class="destaques">
+            <h2 class="destaques__titulo">Receitas em destaque</h2>
+            <div class="destaques__grade">
+                <div class="destaques__card">
+                    <img src="imagens/panqueca de banana e aveia.jpg" alt="Panqueca de banana e aveia">
+                    <a href="panqueca.html">Panqueca de banana e aveia</a>
+                </div>
+                <div class="destaques__card">
+                    <img src="imagens/wrap de frango.webp" alt="Wrap de frango">
+                    <a href="wrapdefrango.html">Wrap de frango</a>
+                </div>
+                <div class="destaques__card">
+                    <img src="imagens/sorvete.avif" alt="Sorvete zero açúcar">
+                    <a href="sorvete.html">Sorvete zero açúcar</a>
+                </div>
+                <div class="destaques__card">
+                    <img src="imagens/salada grao de bico.jpg" alt="Salada de grão de bico">
+                    <a href="saladagraodebico.html">Salada de grão de bico</a>
+                </div>
+            </div>
+        </section>
+ 
+        <!-- Dicas e artigos -->
+        <section class="artigos">
+            <h2 class="artigos__titulo">Dicas e artigos recentes</h2>
+            <div class="artigos__card">
+                <span class="artigos__card__categoria">Alimentação</span>
+                <a href="lowcarb.html">Dieta low carb</a>
+                <p>A dieta low carb realmente é a melhor opção para quem quer emagrecer?</p>
+            </div>
+            <div class="artigos__card">
+                <span class="artigos__card__categoria">Planejamento</span>
+                <a href="treino.html">Treino e dieta</a>
+                <p>É possível conciliar dieta e treino na sua rotina!</p>
+            </div>
+            <div class="artigos__card">
+                <span class="artigos__card__categoria">Bem-estar</span>
+                <a href="nutricao.html">Nutrição</a>
+                <p>Aprenda a combinar macronutrientes de forma simples e prática no dia a dia.</p>
+            </div>
+        </section>
+ 
+        <a class="btn-topo" href="#paginainicial">Voltar ao topo</a>
+ 
     </main>
-    <a href="#paginainicial">Voltar ao topo</a>
-    <br><br>
-
-    <footer>
-        <h2>Equilíbrio na colher</h2>
-        <span>Trabalho acadêmico</span>
-        <p>Desenvolvido com projeto para a disciplina Tecnologias para Internet - Universidade de Uberaba (Uniube),
-            curso de Engenharia da computação
-        </p>
-        <a href="https://uniube.br/" target="_blank"><img src="imagens/logouniube.svg" alt=""></a>
-        <h3>Fale Conosco</h3>
-        <p>Dúvidas sobre o projeto? Entre em contato com a equipe responsável pelo
-            desenvolvimento.
-        </p>
-        <a href="contato.html">Fale conosco</a>
+ 
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="footer__marca">
+            <h2>Equilíbrio na colher</h2>
+            <span>Trabalho acadêmico</span>
+        </div>
+        <p class="footer__descricao">Desenvolvido com projeto para a disciplina Tecnologias para Internet - Universidade de Uberaba (Uniube), curso de Engenharia da computação</p>
+        <div class="footer__logo-uniube">
+            <a href="https://uniube.br/" target="_blank">
+                <img src="imagens/logouniube.svg" alt="Logo Uniube">
+            </a>
+        </div>
+        <div class="footer__contato">
+            <h3>Fale Conosco</h3>
+            <p>Dúvidas sobre o projeto? Entre em contato com a equipe responsável pelo desenvolvimento.</p>
+            <a href="contato.html">Fale conosco</a>
+        </div>
     </footer>
+ 
+    <script src="js/script.js"></script>
 </body>
 </html>

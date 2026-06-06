@@ -4,79 +4,100 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crepioca com queijo e tomate</title>
+    <link rel="stylesheet" href="css/site.css">
 </head>
 <body>
-    <header>
-        <img src="imagens/logo site.png" alt="Logo site">
-        <nav>
+
+    <!-- ===== HEADER ===== -->
+    <header class="header">
+        <div class="header__logo">
+            <a href="index.html">
+                <img src="imagens/logo site.png" alt="Logo Equilíbrio na Colher">
+            </a>
+        </div>
+        <nav class="header__nav">
             <ul>
-                <li><a href="index.html">Página inicial(Home)</a></li>
+                <li><a href="index.html">Página inicial</a></li>
                 <li><a href="receitas.html">Receitas</a></li>
-                <li>Dicas nutricionais</li>
-                <ul>
-                    <li><a href="lowcarb.html">Dieta Low Carb</a></li>
-                    <li><a href="treino.html">Treino e dieta</a></li>
-                    <li><a href="nutricao.html">Nutrição</a></li>
-                </ul>
+                <li class="nav__submenu-titulo">Dicas nutricionais
+                    <ul class="nav__submenu">
+                        <li><a href="lowcarb.html">Dieta Low Carb</a></li>
+                        <li><a href="treino.html">Treino e dieta</a></li>
+                        <li><a href="nutricao.html">Nutrição</a></li>
+                    </ul>
+                </li>
+            </ul>
         </nav>
     </header>
 
     <main>
-        <h1>Crepioca com queijo e tomate</h1>
-        <img src="imagens/crepioca.webp" alt="crepioca com queijo e tomate">
-
-        <table border="1">
-            <tr>
-                <th>Ingrediente</th>
-                <th>Quantidade</th>
-            </tr>
-            <tr>
-                <td>Goma de tapioca</td>
-                <td>1 colher de sopa</td>
-            </tr>
-            <tr>
-                <td>Ovo</td>
-                <td>1 unidade</td>
-            </tr>
-            <tr>
-                <td>Queijo mussarela</td>
-                <td>2 fatias</td>
-            </tr>
-            <tr>
-                <td>Sal</td>
-                <td>A gosto</td>
-            </tr>
-            <tr>
-                <td>Tomate cereja</td>
-                <td>4 unidades</td>
-            </tr>
-        </table>
-
-        <h2>Modo de preparo:</h2>
-        <ol type="1">
-            <li>Em um recepiente bata o ovo com a pitada de sal do seu gosto</li>
-            <li>Adicione a goma de tapioca e bata novamente até formar uma mistura homogênea</li>
-            <li>Leve a mistura até a uma frigideira antiaderente e mantenha em fogo baixo</li>
-            <li>Deixe por alguns segundos e vire para dourar o outro lado</li>
-            <li>Assim que virar, adicione as fatias da mussarela e tampe-a até que a mussarela derreta</li>
-            <li>Retire do fogo, adicione os tomates cortados e dobre-a ao meio</li>
-        </ol>
+        <!-- Receita individual -->
+        <article class="receita">
+            <h1 class="receita__titulo">Crepioca com queijo e tomate</h1>
+            <div class="receita__imagem">
+                <img src="imagens/crepioca.webp" alt="Crepioca com queijo e tomate">
+            </div>
+            <div class="receita__ingredientes">
+                <table>
+                    <tr>
+                        <th>Ingrediente</th>
+                        <th>Quantidade</th>
+                    </tr>
+                    <tr>
+                        <td>Goma de tapioca</td>
+                        <td>1 colher de sopa</td>
+                    </tr>
+                    <tr>
+                        <td>Ovo</td>
+                        <td>1 unidade</td>
+                    </tr>
+                    <tr>
+                        <td>Queijo mussarela</td>
+                        <td>2 fatias</td>
+                    </tr>
+                    <tr>
+                        <td>Sal</td>
+                        <td>A gosto</td>
+                    </tr>
+                    <tr>
+                        <td>Tomate cereja</td>
+                        <td>4 unidades</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="receita__preparo">
+                <h2>Modo de preparo</h2>
+                <ol>
+                    <li>Em um recipiente, bata o ovo com a pitada de sal do seu gosto.</li>
+                    <li>Adicione a goma de tapioca e bata novamente até formar uma mistura homogênea.</li>
+                    <li>Leve a mistura a uma frigideira antiaderente e mantenha em fogo baixo.</li>
+                    <li>Deixe por alguns segundos e vire para dourar o outro lado.</li>
+                    <li>Assim que virar, adicione as fatias de mussarela e tampe até que derreta.</li>
+                    <li>Retire do fogo, adicione os tomates cortados e dobre ao meio.</li>
+                </ol>
+            </div>
+        </article>
     </main>
-        <br><br>
 
-    <footer>
-        <h2>Equilíbrio na colher</h2>
-        <span>Trabalho acadêmico</span>
-        <p>Desenvolvido com projeto para a disciplina Tecnologias para Internet - Universidade de Uberaba (Uniube),
-            curso de Engenharia da computação
-        </p>
-        <a href="https://uniube.br/" target="_blank"><img src="imagens/logouniube.svg" alt=""></a>
-        <h3>Fale Conosco</h3>
-        <p>Dúvidas sobre o projeto? Entre em contato com a equipe responsável pelo
-            desenvolvimento.
-        </p>
-        <a href="contato.html">Fale conosco</a>
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="footer__marca">
+            <h2>Equilíbrio na colher</h2>
+            <span>Trabalho acadêmico</span>
+        </div>
+        <p class="footer__descricao">Desenvolvido com projeto para a disciplina Tecnologias para Internet - Universidade de Uberaba (Uniube), curso de Engenharia da computação</p>
+        <div class="footer__logo-uniube">
+            <a href="https://uniube.br/" target="_blank">
+                <img src="imagens/logouniube.svg" alt="Logo Uniube">
+            </a>
+        </div>
+        <div class="footer__contato">
+            <h3>Fale Conosco</h3>
+            <p>Dúvidas sobre o projeto? Entre em contato com a equipe responsável pelo desenvolvimento.</p>
+            <a href="contato.html">Fale conosco</a>
+        </div>
     </footer>
-    
+
+    <script src="js/script.js"></script>
 </body>
 </html>

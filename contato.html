@@ -4,50 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fale conosco</title>
+    <link rel="stylesheet" href="css/site.css">
 </head>
 <body>
-    <header>
-        <a href="index.html"><img src="imagens/logo site.png" alt="logo site"></a>
-        <nav>
+ 
+    <!-- ===== HEADER ===== -->
+    <header class="header">
+        <div class="header__logo">
+            <a href="index.html">
+                <img src="imagens/logo site.png" alt="Logo Equilíbrio na Colher">
+            </a>
+        </div>
+        <nav class="header__nav">
             <ul>
-                <li><a href="index.html">Página inicial(Home)</a></li>
+                <li><a href="index.html">Página inicial</a></li>
                 <li><a href="receitas.html">Receitas</a></li>
-                <li>Dicas nutricionais</li>
-                <ul>
-                    <li><a href="lowcarb.html">Dieta Low Carb</a></li>
-                    <li><a href="treino.html">Treino e dieta</a></li>
-                    <li><a href="nutricao.html">Nutrição</a></li>
-                </ul>
+                <li class="nav__submenu-titulo">Dicas nutricionais
+                    <ul class="nav__submenu">
+                        <li><a href="lowcarb.html">Dieta Low Carb</a></li>
+                        <li><a href="treino.html">Treino e dieta</a></li>
+                        <li><a href="nutricao.html">Nutrição</a></li>
+                    </ul>
+                </li>
+            </ul>
         </nav>
     </header>
+ 
     <main>
-        <h1>Fale consco</h1>
-        <p>Contato:</p>
-        <ul>
-            <li><a href="tel:+553499215744">Telefone</a></li>
-            <li><a href="https://wa.me/5534992158744">WhatsApp</a></li>
-            <li><a href="mail.to:dudaleopoldino24@hotmail.com">Email</a><br><li>
-
-        <form action="processar-dados.php" method="post">
-            <label for="fmensagem">Deixe sua mensagem</label><br>
-            <textarea row="4" type="text" id="fmensagem" name="mensagem" placeholder="Escreva aqui"></textarea><br>
-            <button type="submit">Enviar</button>
-        </form>
-     </main>
-     <br><br>
-    <footer>
-        <h2>Equilíbrio na colher</h2>
-        <span>Trabalho acadêmico</span>
-        <p>Desenvolvido com projeto para a disciplina Tecnologias para Internet - Universidade de Uberaba (Uniube),
-            curso de Engenharia da computação
-        </p>
-        <a href="https://uniube.br/"><img src="imagens/logouniube.svg" alt=""></a>
-        <h3>Fale Conosco</h3>
-        <p>Dúvidas sobre o projeto? Entre em contato com a equipe responsável pelo
-            desenvolvimento.
-        </p>
-        <a href="contato.html">Fale conosco</a>
-    </footer>     
-    
+        <section class="contato">
+            <h1 class="contato__titulo">Fale conosco</h1>
+            <div class="contato__info">
+                <p>Contato:</p>
+                <ul>
+                    <li><a href="tel:+553499215744">Telefone</a></li>
+                    <li><a href="https://wa.me/5534992158744">WhatsApp</a></li>
+                    <li><a href="mailto:dudaleopoldino24@hotmail.com">Email</a></li>
+                </ul>
+            </div>
+            <div class="contato__form">
+                <form action="processar-dados.php" method="post">
+                    <label for="fmensagem">Deixe sua mensagem</label>
+                    <textarea rows="4" id="fmensagem" name="mensagem" placeholder="Escreva aqui"></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+ 
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="footer__marca">
+            <h2>Equilíbrio na colher</h2>
+            <span>Trabalho acadêmico</span>
+        </div>
+        <p class="footer__descricao">Desenvolvido com projeto para a disciplina Tecnologias para Internet - Universidade de Uberaba (Uniube), curso de Engenharia da computação</p>
+        <div class="footer__logo-uniube">
+            <a href="https://uniube.br/" target="_blank">
+                <img src="imagens/logouniube.svg" alt="Logo Uniube">
+            </a>
+        </div>
+        <div class="footer__contato">
+            <h3>Fale Conosco</h3>
+            <p>Dúvidas sobre o projeto? Entre em contato com a equipe responsável pelo desenvolvimento.</p>
+            <a href="contato.html">Fale conosco</a>
+        </div>
+    </footer>
+ 
+    <script src="js/script.js"></script>
 </body>
 </html>
